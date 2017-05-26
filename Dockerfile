@@ -1,4 +1,5 @@
 FROM ubuntu:latest
+RUN apt-get -y install software-properties-common
 RUN add-apt-repository --enable-source --yes "ppa:marutter/rrutter"
 RUN apt-get update
 RUN apt-get install -y r-base-dev r-cran-rcpp
